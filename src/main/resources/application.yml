@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: ms-gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: ms-usuario
+              uri: http://localhost:64219
+              predicates:
+                - Path=/api/v1/usuarios/**

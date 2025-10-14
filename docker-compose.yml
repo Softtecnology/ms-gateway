@@ -1,0 +1,6 @@
+services:
+  ms-gateway:
+    image: ms-gateway
+    container_name: ms-gateway-container
+    ports:
+      - "8080:8080" 
